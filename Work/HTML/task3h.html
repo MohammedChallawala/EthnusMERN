@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            border: 1px solid black;
+            border-top: 3px ridge gray;
+            border-right: 3px groove white;
+            width: 60%;
+        }
+        div{
+            background-color: rgb(230, 230, 230);
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
-    <p>
-        Click any of the following links
-    </p>
-    <a target = "_blank" href = "https://google.com/">
-        Opens in New 
-    </a>&nbsp;|
-    <a target = "_self" href = "https://google.com/">
-        Opens in Self 
-    </a>&nbsp;|
-    <a target = "_parent" href = "https://google.com/">
-        Opens in Parent 
-    </a>&nbsp;|
-    <a target = "_top" href = "https://google.com/">
-        Opens in Body 
-    </a>&nbsp;|
-    <a href="https://gmail.com/" target="_blank">
-        Send Email
-    </a>
+    <div>
+        Click any of the following links<br>
+        <a target = "_blank" href = "https://google.com/">
+            Opens in New 
+        </a>&nbsp;|
+        <a target = "_self" href = "https://google.com/">
+            Opens in Self 
+        </a>&nbsp;|
+        <a target = "_parent" href = "https://google.com/">
+            Opens in Parent 
+        </a>&nbsp;|
+        <a target = "_top" href = "https://google.com/">
+            Opens in Body 
+        </a>&nbsp;|
+        <a href="mailto:example@example.com" target="_blank">
+            Send Email
+        </a>
+    </div>
 </body>
 </html>
