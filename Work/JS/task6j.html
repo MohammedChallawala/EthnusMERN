@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+            width: 360px;
+            /* align-items: center;  */
+            background-color: rgb(241, 241, 241);
+            margin: 25px 35%;
+            height: 300px;
+            box-shadow: 0.5px 1px 2.5px rgba(0, 0, 0, 0.5);
+            border-radius: 1px;
+        }
+        div h2{
+            text-align: center;
+            margin-top: 30px;
+            font-family: neue Arial, Helvetica, sans-serif;
+        }
+        input, button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 45px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        #input{
+            height: 32px;
+            width: 275px;
+            border: 1px;
+            border-radius: 3px;
+            display: inline-flex;
+        }
+        button{
+            width: 177px;
+            background-color: rgb(66, 104, 226);
+            color: white;
+            height: 38px;
+            border: 0.5px solid transparent;
+            border-radius: 3px;
+        }
+        #chk{
+            display: inline-flex;
+            margin-top: 10px;
+        }
+        div a{
+            display: inline-flex;
+            text-decoration: none;
+            margin-left: 42.5px;
+        }
+        a, a:visited, a:hover, a:active {
+            color: blue;
+        }
+        #signup{
+            display: inline-flex;
+            margin-left: 40%;
+        }
+        #a{
+            display: inline-flex;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Instagram</h2>
+        <form>
+            <input placeholder="Username" id="input"><br>
+            <input placeholder="Password" type="password" id="input"><br>
+            <button type="submit" id="input">Log in</button><br><br>
+            <input type="checkbox" value="Remember me" id="chk">
+            <label>Remember me</label>
+            <a href="#">Forgot Password?</a>
+        </form>
+    </div>
+    <label id="signup">Don't have an account? <a href="#" id="a">&nbsp;Sign up here</a>.</label>
+</body>
+</html>
