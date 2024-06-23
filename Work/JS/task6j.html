@@ -3,80 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Instagram Login</title>
     <style>
-        div{
-            display: inline-block;
-            width: 360px;
-            /* align-items: center;  */
-            background-color: rgb(241, 241, 241);
-            margin: 25px 35%;
-            height: 300px;
-            box-shadow: 0.5px 1px 2.5px rgba(0, 0, 0, 0.5);
-            border-radius: 1px;
-        }
-        div h2{
-            text-align: center;
-            margin-top: 30px;
-            font-family: neue Arial, Helvetica, sans-serif;
-        }
-        input, button{
+        body {
+            font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-left: 45px;
-            margin-top: 5px;
-            margin-bottom: 5px;
+            background-color: #f0f0f0;
+            margin: 0;
         }
-        #input{
-            height: 32px;
-            width: 275px;
-            border: 1px;
-            border-radius: 3px;
-            display: inline-flex;
+        #main {
+            width: 280px;
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 40px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
-        button{
-            width: 177px;
-            background-color: rgb(66, 104, 226);
+        h2 {
+            text-align: center;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 24px;
+            color: #262626;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            position: relative;
+            margin: 10px 0;
+        }
+        .input-group input {
+            width: 80%;
+            padding: 10px 10px 10px 40px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .input-group img {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            
+        }
+        button {
+            width: 98.573%;
+            background-color: #4268e2;
             color: white;
             height: 38px;
-            border: 0.5px solid transparent;
-            border-radius: 3px;
-        }
-        #chk{
-            display: inline-flex;
+            border: none;
+            border-radius: 4px;
             margin-top: 10px;
+            font-size: 14px;
         }
-        div a{
-            display: inline-flex;
+        #chk, label {
+            margin: 10px 0;
+        }
+        a {
+            color: #4268e2;
             text-decoration: none;
-            margin-left: 42.5px;
+            font-size: 12px;
         }
-        a, a:visited, a:hover, a:active {
-            color: blue;
+        #signup {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            width: 360px;
         }
-        #signup{
-            display: inline-flex;
-            margin-left: 40%;
-        }
-        #a{
-            display: inline-flex;
+        #signup a {
+            color: #4268e2;
             text-decoration: none;
+        }
+        #forgot {
+            margin-left: 40px;
         }
     </style>
 </head>
 <body>
-    <div>
+    <div id="main">
         <h2>Instagram</h2>
         <form>
-            <input placeholder="Username" id="input"><br>
-            <input placeholder="Password" type="password" id="input"><br>
-            <button type="submit" id="input">Log in</button><br><br>
-            <input type="checkbox" value="Remember me" id="chk">
-            <label>Remember me</label>
-            <a href="#">Forgot Password?</a>
+            <div class="input-group">
+                <img src="../../Images/user.png" alt="User Icon">
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="input-group">
+                <img src="../../Images/lock.png" alt="Password Icon">
+                <input type="password" placeholder="Password">
+            </div>
+            <button type="submit">Log in</button>
+            <br><br>
+            <div>
+                <input type="checkbox" id="chk">
+                <label for="chk">Remember me</label>
+                <a href="#" id="forgot">Forgot Password?</a>
+            </div>
         </form>
     </div>
-    <label id="signup">Don't have an account? <a href="#" id="a">&nbsp;Sign up here</a>.</label>
+    <div id="signup">
+        Don't have an account? <a href="#">Sign up here</a>.
+    </div>
 </body>
 </html>
